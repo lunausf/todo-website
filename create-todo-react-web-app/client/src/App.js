@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component{
@@ -119,7 +118,7 @@ class App extends Component{
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <p>{this.state.response}</p>
         <form onSubmit={this.addToDoListHandleSubmit}>
           <p>
@@ -138,7 +137,7 @@ class App extends Component{
             onChange={this.handleChange}
           />
           <br></br>
-          <button type="submit">Submit</button>
+          <button type="submit">Add</button>
         </form>
         <p>{this.state.addTodoListResponse}</p>
 
@@ -159,7 +158,7 @@ class App extends Component{
             onChange={this.handleChange}
           />
           <br></br>
-          <button type="submit">Submit</button>
+          <button type="submit">Add</button>
           </form>
           <p>{this.state.addTodoItemResponse}</p>
 
@@ -180,7 +179,7 @@ class App extends Component{
             onChange={this.handleChange}
           />
           <br></br>
-          <button type="submit">Submit</button>
+          <button type="submit">Update</button>
           </form>
           <p>{this.state.updateToDoItemResponse}</p>
 
@@ -196,7 +195,7 @@ class App extends Component{
             onChange={this.handleChange}
           />
           <br></br>
-          <button type="submit">Submit</button>
+          <button type="submit">Delete</button>
           </form>
           <p>{this.state.deleteToDoItemResponse}</p>
 
@@ -211,11 +210,9 @@ class App extends Component{
             onChange={this.handleChange}
           />
           <br></br>
-          <button type="submit">Submit</button>
+          <button type="submit">Delete</button>
           </form>
           <p>{this.state.deleteToDoListResponse}</p>
-
-
       </div>
     );
   }
